@@ -94,11 +94,11 @@
                     <packageName>com.ws.generated</packageName> 
                 </configuration> 
 				<dependencies> 
-<!--                    <dependency> -->
-<!--                        <groupId>org.glassfish.jaxb</groupId> -->
-<!--                        <artifactId>jaxb-xjc</artifactId> -->
-<!--                        <version>4.0.2</version> -->
-<!--                    </dependency> -->
+                    <dependency> 
+                        <groupId>org.glassfish.jaxb</groupId> 
+                        <artifactId>jaxb-xjc</artifactId> 
+                        <version>4.0.2</version> 
+                    </dependency> 
                     <!--enlloc de javax usem jakarta a partir de java 11 -->
                     <dependency> 
                         <groupId>com.sun.activation</groupId> 
