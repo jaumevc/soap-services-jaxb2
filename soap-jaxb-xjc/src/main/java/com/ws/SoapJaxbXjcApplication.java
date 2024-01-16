@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.ws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SoapJaxb2XjcApplication {
+public class SoapJaxbXjcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SoapJaxb2XjcApplication.class, args);
+		SpringApplication.run(SoapJaxbXjcApplication.class, args);
 	}
 
 }

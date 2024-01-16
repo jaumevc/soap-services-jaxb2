@@ -79,6 +79,33 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
 				<version>3.1.0</version>
+				<executions> 
+                    <execution> 
+                        <id>xjc</id> 
+                        <goals> 
+                            <goal>xjc</goal> 
+                        </goals> 
+                    </execution> 
+                </executions> 
+                  <configuration> 
+                    <sources> 
+                        <source>src/main/resources/xsd/products.xsd</source> 
+                    </sources> 
+                    <packageName>com.ws.generated</packageName> 
+                </configuration> 
+				<dependencies> 
+<!--                    <dependency> -->
+<!--                        <groupId>org.glassfish.jaxb</groupId> -->
+<!--                        <artifactId>jaxb-xjc</artifactId> -->
+<!--                        <version>4.0.2</version> -->
+<!--                    </dependency> -->
+                    <!--enlloc de javax usem jakarta a partir de java 11 -->
+                    <dependency> 
+                        <groupId>com.sun.activation</groupId> 
+                        <artifactId>jakarta.activation</artifactId> 
+                        <version>1.2.2</version> 
+                    </dependency> 
+                </dependencies> 
 			</plugin>
 		</plugins>
 	</build>
