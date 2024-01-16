@@ -18,32 +18,45 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!--		<dependency>-->
+		<!--			<groupId>org.springframework.boot</groupId>-->
+		<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+		<!--		</dependency>-->
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web-services</artifactId>
+			<groupId>
+				org.springframework.boot</groupId>
+			<artifactId>
+				spring-boot-starter-web-services</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
+			<groupId>
+				org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
+			<scope>
+				runtime</scope>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>com.h2database</groupId>
+			<groupId>
+				com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
+			<groupId>
+				org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
@@ -54,7 +67,8 @@
 		<!--		</dependency>-->
 		<!-- https://mvnrepository.com/artifact/wsdl4j/wsdl4j -->
 		<dependency>
-			<groupId>wsdl4j</groupId>
+			<groupId>
+				wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
 			<!--version>1.6.3</version-->
 		</dependency>
@@ -64,48 +78,58 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
+				<groupId>
+					org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>
+								org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>
+					org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>
+					3.1.0</version>
 				<executions> 
                     <execution> 
                         <id>xjc</id> 
                         <goals> 
-                            <goal>xjc</goal> 
-                        </goals> 
-                    </execution> 
-                </executions> 
+                            <goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions> 
                   <configuration> 
                     <sources> 
-                        <source>src/main/resources/xsd/products.xsd</source> 
-                    </sources> 
-                    <packageName>com.ws.generated</packageName> 
-                </configuration> 
+                        <source>
+							src/main/resources/xsd/products.xsd</source>
+					</sources> 
+                    <packageName>
+						com.ws.generated</packageName>
+				</configuration> 
 				<dependencies> 
                     <dependency> 
-                        <groupId>org.glassfish.jaxb</groupId> 
+                        <groupId>
+							org.glassfish.jaxb</groupId> 
                         <artifactId>jaxb-xjc</artifactId> 
-                        <version>4.0.2</version> 
-                    </dependency> 
-                    <!--enlloc de javax usem jakarta a partir de java 11 -->
+                        <version>
+							4.0.2</version>
+					</dependency>
+					<!--enlloc de javax usem jakarta a partir de java 11 -->
                     <dependency> 
-                        <groupId>com.sun.activation</groupId> 
+                        <groupId>
+							com.sun.activation</groupId> 
                         <artifactId>jakarta.activation</artifactId> 
-                        <version>1.2.2</version> 
-                    </dependency> 
-                </dependencies> 
+                        <version>
+							1.2.2</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
