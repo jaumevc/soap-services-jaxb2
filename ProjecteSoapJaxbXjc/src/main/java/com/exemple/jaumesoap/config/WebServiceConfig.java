@@ -1,4 +1,4 @@
-package com.ws.config;
+package com.exemple.jaumesoap.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -29,7 +29,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("productPort");
 		wsdl11Definition.setLocationUri("/ws");
-		wsdl11Definition.setTargetNamespace("http://www.example.com/generated");
+		wsdl11Definition.setTargetNamespace("http://www.exemple.com/jaumesoap/generated");
 		wsdl11Definition.setSchema(productsSchema);
 		return wsdl11Definition;
 	}

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="9ec8f3c4-5c54-4952-a379-509f7cb1d449" activeEnvironment="Default" name="demosoap" resourceRoot="" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="9ec8f3c4-5c54-4952-a379-509f7cb1d449" activeEnvironment="Default" name="ProjecteSoapJaxbXjc" resourceRoot="" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
 <con:settings/>
-<con:interface xsi:type="con:WsdlInterface" id="2884f730-fac1-4a03-bed8-2d69fb8d3ffc" wsaVersion="NONE" name="productPortSoap11" type="wsdl" bindingName="{http://www.example.com/demosoap/gen}productPortSoap11" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/ws/products.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:WsdlInterface" id="2884f730-fac1-4a03-bed8-2d69fb8d3ffc" wsaVersion="NONE" name="productPortSoap11" type="wsdl" bindingName="{http://www.jaume.com/jaumesoap/generated}productPortSoap11" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/ws/products.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <con:settings/>
 <con:definitionCache type="TEXT" rootPart="http://localhost:8080/ws/products.wsdl">
 <con:part>
 <con:url>http://localhost:8080/ws/products.wsdl</con:url>
 <con:content><![CDATA[
-<wsdl:definitions targetNamespace="http://www.example.com/demosoap/gen" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.example.com/demosoap/gen" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.com/demosoap/gen">
+<wsdl:definitions targetNamespace="http://www.jaume.com/jaumesoap/generated" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.jaume.com/jaumesoap/generated" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.jaume.com/jaumesoap/generated">
   <wsdl:types>
-    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.example.com/demosoap/gen" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.jaume.com/jaumesoap/generated" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <!--Find All-->
       <xs:element name="getProductsRequest">
         <xs:complexType>
@@ -138,33 +138,33 @@
 <con:endpoints>
 <con:endpoint>http://localhost:8080/ws</con:endpoint>
 </con:endpoints>
-<con:operation id="eb102b71-d03c-4898-b203-a3627867e5b5" isOneWay="false" action="" name="getProduct" bindingOperationName="getProduct" type="Request-Response" outputName="getProductResponse" inputName="getProductRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34bbd6d7-a144-424f-af50-264d2f62b9a3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://www.example.com/demosoap/gen">\r
+<con:operation id="eb102b71-d03c-4898-b203-a3627867e5b5" isOneWay="false" action="" name="getProduct" bindingOperationName="getProduct" type="Request-Response" outputName="getProductResponse" inputName="getProductRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34bbd6d7-a144-424f-af50-264d2f62b9a3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:generated="http://www.jaume.com/jaumesoap/generated">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
-      <gen:getProductRequest>\r
-         <gen:name>Arroz Costeño</gen:name>\r
-      </gen:getProductRequest>\r
+      <generated:getProductRequest>\r
+         <generated:name>Arroz Costeño</generated:name>\r
+      </generated:getProductRequest>\r
    </soapenv:Body>\r
 </soapenv:Envelope>
-]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.com/demosoap/gen/productPort/getProductRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="20e7da70-1cb8-4502-9c6f-6a80aa72d4e7" isOneWay="false" action="" name="getProducts" bindingOperationName="getProducts" type="Request-Response" outputName="getProductsResponse" inputName="getProductsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="76846fb8-abf3-46e0-b6fe-a199e23f0b77" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://www.example.com/demosoap/gen">\r
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.jaume.com/jaumesoap/generated/productPort/getProductRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="20e7da70-1cb8-4502-9c6f-6a80aa72d4e7" isOneWay="false" action="" name="getProducts" bindingOperationName="getProducts" type="Request-Response" outputName="getProductsResponse" inputName="getProductsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="76846fb8-abf3-46e0-b6fe-a199e23f0b77" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:generated="http://www.jaume.com/jaumesoap/generated">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
-      <gen:getProductsRequest/>\r
+      <generated:getProductsRequest/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.com/demosoap/gen/productPort/getProductsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4d4ed39d-8313-4403-81ed-587bfcf9060e" isOneWay="false" action="" name="postProduct" bindingOperationName="postProduct" type="Request-Response" outputName="postProductResponse" inputName="postProductRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f64aa2a-41f3-4e01-8e2a-d849c9a73e2d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://www.example.com/demosoap/gen">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.jaume.com/jaumesoap/generated/productPort/getProductsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4d4ed39d-8313-4403-81ed-587bfcf9060e" isOneWay="false" action="" name="postProduct" bindingOperationName="postProduct" type="Request-Response" outputName="postProductResponse" inputName="postProductRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f64aa2a-41f3-4e01-8e2a-d849c9a73e2d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:generated="http://www.jaume.com/jaumesoap/generated">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
-      <gen:postProductRequest>\r
-         <gen:product>\r
-            <gen:id>0</gen:id>\r
-            <gen:name>Azúcar Paramonga</gen:name>\r
-            <gen:price>18.50</gen:price>\r
-            <gen:description>Bolsa 4kg</gen:description>\r
-         </gen:product>\r
-      </gen:postProductRequest>\r
+      <generated:postProductRequest>\r
+         <generated:product>\r
+            <generated:id>0</generated:id>\r
+            <generated:name>Azúcar Paramonga</generated:name>\r
+            <generated:price>18.50</generated:price>\r
+            <generated:description>Bolsa 4kg</generated:description>\r
+         </generated:product>\r
+      </generated:postProductRequest>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
 <con:credentials><con:authType>No Authorization</con:authType></con:credentials>
 <con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/>
-<con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.com/demosoap/gen/productPort/postProductRequest"/>
+<con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.jaume.com/jaumesoap/generated/productPort/postProductRequest"/>
 <con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

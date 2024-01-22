@@ -1,13 +1,13 @@
-package com.ws;
+package com.exemple.jaumesoap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SoapJaxbXjcApplication {
+public class ProjecteSoapJaxbXjcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SoapJaxbXjcApplication.class, args);
+		SpringApplication.run(ProjecteSoapJaxbXjcApplication.class, args);
 	}
 
 }

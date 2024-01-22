@@ -1,4 +1,4 @@
-package com.ws.model;
+package com.exemple.jaumesoap.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,6 +17,7 @@ public class ProductModel {
     private String name;
     private double price;
     private String description;
+    
 	public int getId() {
 		return id;
 	}
@@ -41,7 +42,4 @@ public class ProductModel {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-    
-    
-
 }

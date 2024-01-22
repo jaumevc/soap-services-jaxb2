@@ -1,4 +1,4 @@
-package com.ws.endpoint;
+package com.exemple.jaumesoap.endpoint;
 
 import java.util.List;
 
@@ -8,21 +8,21 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import com.ws.converter.ProductConverter;
-import com.ws.generated.GetProductRequest;
-import com.ws.generated.GetProductResponse;
-import com.ws.generated.GetProductsRequest;
-import com.ws.generated.GetProductsResponse;
-import com.ws.generated.PostProductRequest;
-import com.ws.generated.PostProductResponse;
-import com.ws.generated.Product;
-import com.ws.model.ProductModel;
-import com.ws.repository.ProductRepository;
+import com.exemple.jaumesoap.converter.ProductConverter;
+import com.exemple.jaumesoap.model.ProductModel;
+import com.exemple.jaumesoap.repository.ProductRepository;
+import com.exemple.jaumesoap.generated.GetProductRequest;
+import com.exemple.jaumesoap.generated.GetProductResponse;
+import com.exemple.jaumesoap.generated.GetProductsRequest;
+import com.exemple.jaumesoap.generated.GetProductsResponse;
+import com.exemple.jaumesoap.generated.PostProductRequest;
+import com.exemple.jaumesoap.generated.PostProductResponse;
+import com.exemple.jaumesoap.generated.Product;
 
 @Endpoint
 public class ProductEndPoint {
 
-	private static final String NAMESPACE_URI = "http://www.example.com/ws/generated";
+	private static final String NAMESPACE_URI = "http://www.jaume.com/jaumesoap/generated";
 
     @Autowired
     private ProductRepository productRepository;

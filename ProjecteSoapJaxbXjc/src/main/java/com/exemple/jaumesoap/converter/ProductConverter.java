@@ -1,12 +1,12 @@
-package com.ws.converter;
+package com.exemple.jaumesoap.converter;
 
 import java.util.List;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Component;
 
-import com.ws.generated.Product;
-import com.ws.model.ProductModel;
+import com.exemple.jaumesoap.model.ProductModel;
+import com.exemple.jaumesoap.generated.Product;
 
 @Component
 public class ProductConverter {

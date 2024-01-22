@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.com/demosoap/gen"
-           targetNamespace="http://www.example.com/demosoap/gen" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		   xmlns:tns="http://www.jaume.com/jaumesoap/generated"
+           targetNamespace="http://www.jaume.com/jaumesoap/generated" elementFormDefault="qualified">
 
     <!-- Find All -->
     <xs:element name="getProductsRequest">
